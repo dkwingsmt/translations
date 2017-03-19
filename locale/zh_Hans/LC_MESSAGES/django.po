@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.12\n"
 "PO-Revision-Date: \n"
-"Last-Translator: LJ <jeklau@gmail.com>\n"
+"Last-Translator: DKWings <dkwingsmt@gmail.com>\n"
 "Language-Team: \n"
 
 #: bets/forms.py:18
@@ -714,7 +714,7 @@ msgstr "1/16 决赛"
 # I can't find this on site..
 #: masterleague/lc_strings.py:33
 msgid "3rd place"
-msgstr ""
+msgstr "第三名"
 
 #: masterleague/lc_strings.py:34
 msgid "Tiebreak"
@@ -1176,7 +1176,7 @@ msgstr "所有英雄"
 #: matches/templates/admin/tabular.html:121
 #, python-format
 msgid "Add another %(verbose_name)s"
-msgstr "添加另一个 %(verbose_name)s"
+msgstr "添加另一个%(verbose_name)s"
 
 #: matches/templates/matches/match_detail.html:45
 #: matches/templates/matches/match_stats.html:225
@@ -1270,7 +1270,7 @@ msgstr "死于"
 # I can't find this on site.
 #: matches/templates/matches/match_stats.html:180
 msgid "Nexus forces"
-msgstr ""
+msgstr "时空枢纽军队"
 
 #: matches/templates/matches/match_stats.html:250
 msgctxt "Match time"
@@ -1355,7 +1355,7 @@ msgstr "显示比赛结果"
 #: matches/templates/matches/matches_inline.html:91
 #, python-format
 msgid "Game %(game_number)s"
-msgstr "第 %(game_number)s 局"
+msgstr "第%(game_number)s局"
 
 #: matches/templates/matches/matches_inline.html:108
 msgctxt "Tooltip for match score"
@@ -1532,13 +1532,13 @@ msgstr "局数"
 #: meta/templates/meta/heroes.html:12
 #, python-format
 msgid "Unpicked Heroes (%(unpicked_heroes_count)s of %(heroes_count)s)"
-msgstr "未选英雄数 (%(unpicked_heroes_count)s of %(heroes_count)s)"
+msgstr "%(unpicked_heroes_count)s位英雄未选（总%(heroes_count)s）"
 
 # I cant find the words on site
 #: meta/templates/meta/include/meta_filter_form.html:36
 #: teams/templates/players/player_detail.html:117
 msgid "Show only main stage matches (exclude qualifiers)"
-msgstr ""
+msgstr "只显示主要赛事（排除资格赛）"
 
 #: meta/templates/meta/maps.html:22
 msgid "Shortest"
@@ -1630,37 +1630,38 @@ msgstr "专业型"
 
 #: meta/views.py:259 meta/views.py:336
 msgid "The highest average number of takedowns"
-msgstr "平均击杀数最高"
+msgstr "平均总击杀数最高"
 
 # Is this highest mean lowest?
 # What is the difference between kills and takedowns?
 #: meta/views.py:270
 msgid "The highest average number of kills"
-msgstr ""
+msgstr "平均直接击杀数最高"
 
 #: meta/views.py:281
 msgid "The highest average number of assists"
-msgstr "平均助攻数最多的"
+msgstr "平均助攻数最多"
 
+# Omit "Player that" because the other parallel items doesnt have that, so that it looks better
 #: meta/views.py:292
 msgid "Player that spent the most time alive"
-msgstr "游戏存活时间最长的选手"
+msgstr "游戏存活时间最长"
 
 #: meta/views.py:303
 msgid "Player that spent the most time dead"
-msgstr "游戏死亡时间最长的选手"
+msgstr "游戏死亡时间最长"
 
 #: meta/views.py:347
 msgid "The highest average deaths"
-msgstr "平均死亡率最高"
+msgstr "平均死亡数最高"
 
 #: meta/views.py:358
 msgid "Team that spent the most time alive"
-msgstr "游戏存活时间最长的队伍"
+msgstr "游戏存活时间最长"
 
 #: meta/views.py:369
 msgid "Team that spent the most time dead"
-msgstr "游戏死亡时间最长的队伍"
+msgstr "游戏死亡时间最长"
 
 #: pages/templates/calendar.html:5
 msgctxt "[SEO] Page title"
@@ -1682,8 +1683,8 @@ msgid ""
 "Google Calendar, find 'Other Calendars', choose 'Add by URL' and paste the "
 "link into the URL field."
 msgstr ""
-"如果你是 Google日历 的用户，请复制按钮的链接，打开 Google日历，找到“其它日"
-"历”，选择“通过URL添加”，然后把链接地址粘贴到URL栏里。"
+"如果你是Google日历的用户，请复制按钮的链接，打开Google日历，找到“其它日历”，"
+"选择“通过URL添加”，然后把链接地址粘贴到URL栏里。"
 
 #: pages/templates/calendar_inline.html:48
 msgid "Subscribe to Calendar"
@@ -1995,11 +1996,11 @@ msgstr "全时间段平均统计数据"
 
 #: teams/templates/players/players_compare.html:204
 msgid "KDA is calculated as (Kills + Assists) / (Deaths + 1)"
-msgstr "KDA等于（击杀+助攻）/（死亡+1）"
+msgstr "KDA等于 (击杀+助攻)/(死亡+1)"
 
 #: teams/templates/players/players_compare.html:205
 msgid "Lifetime is calculated as (Match time - Time spend dead) / Match time"
-msgstr "存活时间等于（比赛时间 - 死亡时间）/比赛时间"
+msgstr "存活时间比例等于 (比赛时间-死亡时间)/比赛时间"
 
 #: teams/templates/players/players_transfers.html:5
 msgctxt "[SEO] Page title"
@@ -2167,7 +2168,7 @@ msgstr "攻城伤害"
 #: teams/views.py:590
 msgctxt "Amount of time player was not dead during the match"
 msgid "Lifetime"
-msgstr "存活时间"
+msgstr "存活时间比例"
 
 #: teams/views.py:591
 msgctxt "Crowd control duration"
